@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 119.37 96.86">
+  <!-- Generator: Adobe Illustrator 29.8.3, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1 {
+        clip-path: url(#clippath-1);
+      }
+
+      .st2 {
+        fill: #ea791d;
+      }
+
+      .st3 {
+        fill: #db722c;
+      }
+
+      .st4 {
+        clip-path: url(#clippath);
+      }
+
+      .st5 {
+        fill: #cc5b1e;
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="st0" d="M81.62,1.32l-22.69-.11c-1.03,0-1.6,1.18-.97,1.98l33.86,42.87c.38.48.35,1.17-.08,1.61l-44.21,46.03c-.75.78-.2,2.07.88,2.07l22.44.11c.34,0,.66-.13.89-.38l45.83-47.71c.42-.44.46-1.13.08-1.61L82.58,1.78c-.23-.29-.58-.46-.95-.47Z"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <path class="st0" d="M35.89,1.09l-22.69-.11c-1.03,0-1.6,1.18-.97,1.98l33.86,42.87c.38.48.35,1.17-.08,1.61L1.8,93.47c-.75.78-.2,2.07.88,2.07l22.44.11c.34,0,.66-.13.89-.38l45.83-47.71c.42-.44.46-1.13.08-1.61L36.84,1.56c-.23-.29-.58-.46-.95-.47Z"/>
+    </clipPath>
+  </defs>
+  <g class="st4">
+    <polygon class="st2" points="56.39 1.19 92.49 46.89 118.31 47.02 82.21 1.32 56.39 1.19"/>
+    <polygon class="st5" points="47.53 93.7 118.31 47.02 92.49 46.89 47.53 93.7"/>
+    <polygon class="st3" points="45.56 95.75 71.38 95.88 118.31 47.02 47.53 93.7 45.56 95.75"/>
+  </g>
+  <g class="st1">
+    <polygon class="st2" points="10.65 .97 46.75 46.66 72.58 46.79 36.48 1.09 10.65 .97"/>
+    <polygon class="st5" points="1.79 93.48 72.58 46.79 46.75 46.66 1.79 93.48"/>
+    <polygon class="st3" points="-.18 95.53 25.65 95.65 72.58 46.79 1.79 93.48 -.18 95.53"/>
+  </g>
+</svg>
