@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        montserrat: ['Montserrat', 'sans-serif'],
+                        dm: ['Roboto', 'serif'],
+                        dm2: ['DM Serif Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+
+</head>
+
+<body>
+
+
+    <header class="header fixed top-0 w-full md:mt-12  md:h-auto bg-white md:bg-transparent z-[99]">
+        <div class="w-full md:w-[90%]  mx-auto flex  justify-between items-center">
+            <div
+                class="relative md:shadow-md bg-white flex flex-col md:flex-row md:gap-8 items-center rounded-auto md:rounded-full  md:px-12 w-full md:w-auto">
+                <div
+                    class="w-full md:w-auto h-[100px] md:h-[70px] px-6 md:px-0 flex items-center justify-between md:justify-center bg-gray-100 md:bg-white">
+                    <a href="/"><img src="images/jm-logo.png" class="h-[35px]" alt="Johnson Miller"></a>
+                    <button type="button"
+                        class="openMenuMobile relative flex items-center justify-center md:hidden w-16 h-14 border-lg  rounded-2xl">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+                <div class="showMenuMobile bg-white w-full md:w-auto overflow-hidden">
+                    <nav class="w-full md:w-auto ">
+                        <ul class="flex gap:2 md:gap-8 flex-col md:flex-row  px-2 py-8 md:py-0 md:px-0">
+                            <li><a href="/"
+                                    class="text-md  p-4 md:py-auto w-full block rounded-lg transition transition-300 hover:bg-gray-200 md:hover:bg-white">Enfoque</a>
+                            </li>
+                            <li><a href="/johnsonmiller/servicios.html"
+                                    class="text-md  p-4 md:py-auto w-full block rounded-lg transition transition-300 hover:bg-gray-200 md:hover:bg-white">Servicios</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-md  p-4 md:py-auto w-full block rounded-lg transition transition-300 hover:bg-gray-200 md:hover:bg-white">Industrias</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-md  p-4 md:py-auto w-full block rounded-lg transition transition-300 hover:bg-gray-200 md:hover:bg-white">Acerca
+                                    de</a></li>
+                        </ul>
+                    </nav>
+                    <div class=" flex md:hidden bg-white  items-center rounded-full h-[70px] px-4">
+                        <a href="#"
+                            class="w-full text-md  text-center transition transition-300 bg-[#e9791d] focus:bg-[#cc5b1e] text-white block px-10 h-[50px] leading-[50px] rounded-full ">Contacto</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="hidden md:shadow-md md:flex bg-white  items-center rounded-full h-[70px] px-4 ">
+                <a href="#"
+                    class="text-md bg-[#cc5b1e] text-white block px-10 h-[50px] leading-[50px] rounded-full transition transition-300 bg-[#e9791d] hover:bg-[#cc5b1e]">Contacto</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section
+        class="w-full h-[500px] bg-[url('./images/politica-calidad.png')] bg-cover bg-right md:bg-center flex items-center justify-center">
+
+
+    </section>
+    <section class="my-24">
+        <div class="w-[90%] max-w-[1250px] mx-auto">
+            <div class="">
+                <div class="">
+
+                    <h1 class="text-2xl md:text-6xl font-dm font-bold">Política de calidad</h1>
+
+
+                    <p class="mb-4 mt-4 text-lg">
+                        En <strong>Johnson Miller </strong> entendemos la calidad como el resultado de un compromiso
+                        integral entre las
+                        personas, los procesos y el servicio que entregamos a nuestros clientes corporativos. Nuestra
+                        Política de Calidad orienta todas las decisiones estratégicas, operativas y humanas de la
+                        organización, y refleja nuestra responsabilidad de ofrecer <strong>servicios logísticos
+                            corporativos
+                            confiables, eficientes y sostenibles</strong>, alineados con altos estándares profesionales.
+                        Esta política se fundamenta en <b>cuatro principios esenciales</b>, que guían nuestro actuar
+                        diario y
+                        consolidan relaciones de largo plazo con nuestros clientes, colaboradores y aliados
+                        estratégicos.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <h3 class="text-2xl mb-4 font-bold">1.- El factor humano como eje de la calidad</h3>
+                            <p class="mb-4 mt-4 text-lg">En Johnson Miller creemos firmemente que la calidad del servicio comienza con las
+                                personas. Reconocemos a nuestro equipo humano como el principal activo de la
+                                organización y promovemos un entorno de trabajo basado en el respeto, la ética, la
+                                responsabilidad y el desarrollo profesional.</p>
+                            <p class="mb-4 mt-4 text-lg">
+                                Fomentamos la capacitación continua, la comunicación clara y la participación activa de
+                                nuestros colaboradores, asegurando que cada persona comprenda su rol dentro de la cadena
+                                logística y el impacto directo de su trabajo en la satisfacción del cliente. Un equipo
+                                comprometido, competente y motivado es la base para ofrecer un servicio consistente y de
+                                alto nivel.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="text-2xl mb-4 font-bold">2.- Enfoque absoluto en el servicio al cliente</h3>
+                            <p class="mb-4 mt-4 text-lg">Nuestros clientes corporativos son el centro de todas nuestras operaciones. Nos
+                                comprometemos a comprender sus necesidades, expectativas y particularidades operativas
+                                para ofrecer soluciones logísticas personalizadas, oportunas y orientadas a resultados.
+                            </p>
+                            <p class="mb-4 mt-4 text-lg">
+                                Actuamos con vocación de servicio, transparencia y capacidad de respuesta, priorizando
+                                la confianza, la comunicación permanente y el cumplimiento de los acuerdos establecidos.
+                                Medimos la calidad no solo por la eficiencia operativa, sino por la experiencia del
+                                cliente en cada punto de contacto con Johnson Miller.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="text-2xl mb-4 font-bold">3.- Excelencia operativa y mejora continua</h3>
+                            <p class="mb-4 mt-4 text-lg">Buscamos la excelencia a través de procesos logísticos estructurados, seguros y
+                                eficientes, apoyados en la estandarización, el control y la mejora continua. Evaluamos
+                                permanentemente nuestros procedimientos, indicadores de desempeño y resultados, con el
+                                fin de optimizar recursos, reducir riesgos y elevar los niveles de servicio.</p>
+                            <p class="mb-4 mt-4 text-lg"> Promovemos una cultura de aprendizaje y mejora constante, donde los errores se analizan
+                                como oportunidades para fortalecer nuestros procesos y prevenir recurrencias,
+                                garantizando así la confiabilidad de nuestras operaciones logísticas corporativas.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="text-2xl mb-4 font-bold">4.- Cumplimiento, ética y relaciones sostenibles</h3>
+                            <p class="mb-4 mt-4 text-lg">Operamos bajo un estricto cumplimiento de los requisitos legales, normativos y
+                                contractuales aplicables, así como de nuestros propios estándares internos. Actuamos con
+                                integridad, confidencialidad y responsabilidad en todas nuestras relaciones comerciales
+                                y laborales.</p>
+                            <p class="mb-4 mt-4 text-lg">Construimos vínculos sostenibles con clientes, proveedores y aliados estratégicos,
+                                basados en la confianza mutua, el respeto y la visión de largo plazo, entendiendo que la
+                                calidad también se refleja en la forma en que nos relacionamos con nuestro entorno.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h3 class="text-2xl mb-4 font-bold">Compromiso de la Dirección</h3>
+                    <p class="mb-4 mt-4 text-lg">La Dirección de <strong>Johnson Miller</strong> asume el compromiso de liderar, comunicar y mantener esta Política de Calidad, asignando los recursos necesarios para su cumplimiento, revisión y mejora continua. Esta política es conocida, aplicada y revisada periódicamente por toda la organización, como parte integral de nuestra cultura empresarial y de nuestro compromiso con la excelencia en los <strong>servicios logísticos corporativos</strong>.</p>
+
+                    <p class="mb-4 mt-12 text-lg">
+                        <strong>Johnson Miller</strong><br/>
+                        Servicios Logísticos Corporativos<br/>
+                        Calidad basada en personas, servicio y confianza
+                    </p>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer class="bg-[#cc5b1e] mt-[80px]">
+        <div class="w-[90%] max-w-[1250px] mx-auto flex justify-between items-center py-4">
+            <span class="text-white">@Johnson Miller - 2026 Todos los derechos reservados</span>
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
