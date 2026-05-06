@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../fonts/rajdani/Rajdhani-Variable.woff2') format('woff2');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
