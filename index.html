@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/custom-font.css">
     <script src="js/tailwindconfig.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+
 
 </head>
 
@@ -39,59 +41,63 @@
                             <li>
                                 <a href="/" class="text-md  p-4 md:py-auto w-full block rounded-lg transition transition-300 hover:bg-gray-200 md:hover:bg-white">Enfoque</a>
                             </li>
-                            <li class="relative">
-                                <a href="servicios.html"
-                                    class="text-md  p-4 md:py-auto w-full block rounded-lg transition transition-300 hover:bg-gray-200 md:hover:bg-white">Servicios</a>
-                                <ul
+                            <li class="relative" x-data="{ abierto: false }" >
+                                <a  @click="abierto = !abierto"
+                                    class="flex items-center gap-2 cursor-pointer text-md  p-4 md:py-auto w-full block rounded-lg transition transition-300 hover:bg-gray-200 md:hover:bg-white">
+                                    Servicios
+                                    <svg class="inline w-4 " x-show="!abierto"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/></svg>
+                                    <svg class="inline w-4 " x-show="abierto"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M297.4 169.4C309.9 156.9 330.2 156.9 342.7 169.4L534.7 361.4C547.2 373.9 547.2 394.2 534.7 406.7C522.2 419.2 501.9 419.2 489.4 406.7L320 237.3L150.6 406.6C138.1 419.1 117.8 419.1 105.3 406.6C92.8 394.1 92.8 373.8 105.3 361.3L297.3 169.3z"/></svg>
+                                </a>
+                                <ul  x-show="abierto" x-transition.opacity @click.outside="abierto = false"
                                     class="md:absolute z-[2] md:top-full md:w-[700px] md:-left-[200px] bg-white rounded-lg p-8 hidden md:grid grid-cols-1 md:grid-cols-2 gap-4 md:shadow-lg md:shadow-gray-600 border border-gray-200">
 
                                     <li
-                                        class="relative flex items-center group overflow-hidden h-[80px] px-4 rounded-lg border border-gray-300">
+                                        class="relative flex items-center group overflow-hidden h-[80px] px-4 rounded-lg border border-gray-300 transition-all duration-400 hover:shadow-md">
                                         <a href="mensajeros-motorizados-in-house.html"
-                                            class=" block bg-transparent text-[16px] font-semibold"> Mensajeros
+                                            class=" block bg-transparent text-[16px] font-semibold group-hover:text-[#a33b0d]"> Mensajeros
                                             motorizados <br /> in-house</a>
                                         <span
-                                            class="absolute z-[-1] block left-0 top-0 w-full h-full bg-gradient-to-r from-gray-200 to-gray-500 opacity-0 transition duration-400 group-hover:opacity-100"></span>
+                                            class="absolute z-[-1] block left-0 top-0 w-full h-full bg-gradient-to-r from-white to-[#e9791d]/20 opacity-0 transition duration-600 group-hover:opacity-100"></span>
                                     </li>
                                     <li
-                                        class="relative flex items-center group overflow-hidden h-[80px] px-4 rounded-lg border border-gray-300">
+                                        class="relative flex items-center group overflow-hidden h-[80px] px-4 rounded-lg border border-gray-300 transition-all duration-400 hover:shadow-md">
                                         <a href="proyectos-especiales-envio-documentacion-paqueteria.html"
-                                            class=" block bg-transparent text-[16px] font-semibold"> Proyectos
+                                            class=" block bg-transparent text-[16px] font-semibold group-hover:text-[#a33b0d]"> Proyectos
                                             especiales de envío de documentación o paquetería</a>
                                         <span
-                                            class="absolute z-[-1] block left-0 top-0 w-full h-full bg-gradient-to-r from-gray-200 to-gray-500 opacity-0 transition duration-400 group-hover:opacity-100"></span>
+                                            class="absolute z-[-1] block left-0 top-0 w-full h-full bg-gradient-to-r from-white to-[#e9791d]/20 opacity-0 transition duration-600 group-hover:opacity-100"></span>
                                     </li>
                                     <li
-                                        class="relative flex items-center group overflow-hidden h-[80px] px-4 rounded-lg border border-gray-300">
+                                        class="relative flex items-center group overflow-hidden h-[80px] px-4 rounded-lg border border-gray-300 transition-all duration-400 hover:shadow-md">
                                         <a href="envio-documentacion-paqueteria-express.html"
-                                            class=" block bg-transparent text-[16px] font-semibold"> Envío de
+                                            class=" block bg-transparent text-[16px] font-semibold group-hover:text-[#a33b0d]"> Envío de
                                             documentación y paquetería express</a>
                                         <span
-                                            class="absolute z-[-1] block left-0 top-0 w-full h-full bg-gradient-to-r from-gray-200 to-gray-500 opacity-0 transition duration-400 group-hover:opacity-100"></span>
+                                            class="absolute z-[-1] block left-0 top-0 w-full h-full bg-gradient-to-r from-white to-[#e9791d]/20 opacity-0 transition duration-600 group-hover:opacity-100"></span>
                                     </li>
                                     <li
-                                        class="relative flex items-center group overflow-hidden h-[80px] px-4 rounded-lg border border-gray-300">
+                                        class="relative flex items-center group overflow-hidden h-[80px] px-4 rounded-lg border border-gray-300 transition-all duration-400 hover:shadow-md">
                                         <a href="reparto-masivo-documentos.html"
-                                            class=" block bg-transparent text-[16px] font-semibold"> Reparto masivo de
+                                            class=" block bg-transparent text-[16px] font-semibold group-hover:text-[#a33b0d]"> Reparto masivo de
                                             documentos y otros</a>
                                         <span
-                                            class="absolute z-[-1] block left-0 top-0 w-full h-full bg-gradient-to-r from-gray-200 to-gray-500 opacity-0 transition duration-400 group-hover:opacity-100"></span>
+                                            class="absolute z-[-1] block left-0 top-0 w-full h-full bg-gradient-to-r from-white to-[#e9791d]/20 opacity-0 transition duration-600 group-hover:opacity-100"></span>
                                     </li>
                                     <li
-                                        class="relative flex items-center group overflow-hidden h-[80px] px-4 rounded-lg border border-gray-300">
+                                        class="relative flex items-center group overflow-hidden h-[80px] px-4 rounded-lg border border-gray-300 transition-all duration-400 hover:shadow-md">
                                         <a href="tramites-exterior.html"
-                                            class=" block bg-transparent text-[16px] font-semibold"> Trámites desde
+                                            class=" block bg-transparent text-[16px] font-semibold group-hover:text-[#a33b0d]"> Trámites desde
                                             <br />el exterior</a>
                                         <span
-                                            class="absolute z-[-1] block left-0 top-0 w-full h-full bg-gradient-to-r from-gray-200 to-gray-500 opacity-0 transition duration-400 group-hover:opacity-100"></span>
+                                            class="absolute z-[-1] block left-0 top-0 w-full h-full bg-gradient-to-r from-white to-[#e9791d]/20 opacity-0 transition duration-600 group-hover:opacity-100"></span>
                                     </li>
                                     <li
-                                        class="relative flex items-center group overflow-hidden h-[80px] px-4 rounded-lg border border-gray-300">
+                                        class="relative flex items-center group overflow-hidden h-[80px] px-4 rounded-lg border border-gray-300 transition-all duration-400 hover:shadow-md">
                                         <a href="software-operacional.html"
-                                            class=" block bg-transparent text-[16px] font-semibold">Software
+                                            class=" block bg-transparent text-[16px] font-semibold group-hover:text-[#a33b0d]">Software
                                             <br />operacional</a>
                                         <span
-                                            class="absolute z-[-1] block left-0 top-0 w-full h-full bg-gradient-to-r from-gray-200 to-gray-500 opacity-0 transition duration-400 group-hover:opacity-100"></span>
+                                            class="absolute z-[-1] block left-0 top-0 w-full h-full bg-gradient-to-r from-white to-[#e9791d]/20 opacity-0 transition duration-600 group-hover:opacity-100"></span>
                                     </li>
                                 </ul>
                             </li>
@@ -121,7 +127,7 @@
                             </li>
                             <li class="relative">
                                 <a href="servicios.html"
-                                    class="text-md  p-4 md:py-auto w-full block rounded-lg transition transition-300 hover:bg-gray-200 md:hover:bg-white">Servicios</a>
+                                    class="text-md  p-4 md:py-auto w-full block rounded-lg transition transition-300 hover:bg-gray-200 md:hover:bg-white">Servicios </a>
                                 <ul
                                     class="md:absolute z-[2] md:top-full md:w-[700px] md:-left-[200px] bg-white rounded-lg p-8 hidden md:grid grid-cols-1 md:grid-cols-2 gap-4 md:shadow-lg md:shadow-gray-600 border border-gray-200">
 
